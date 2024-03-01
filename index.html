@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JELEEART</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shopstyle.css"> 
+</head>
+<body>
+<div class="logo">
+  <a href="index.html"><img src="images/jeleeart.gif" alt="JELEEART" style="max-width:100%;height:auto;"></a>
+</div>
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="shop.htm">Shop</a>
+    <a href="commissions.htm">Commissions</a>
+    <a href="links.htm">Links</a>
+    <a href="contact.htm">Contact</a>
+  </div>
+
+  <div class="main">
+
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/frogshop.png" style="width:100%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/commissions.png" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/logolarge.png" style="width:100%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class=links>
+<a href="shop.htm">All Products</a> ✧
+<a href="stickers.htm">Stickers</a> ✧
+<a href="prints.htm">Prints</a>
+</div>
+<br>
+<br>
+<div class="product">
+<a href="products/aki.htm"><img src="images/aki.jpg" alt="home" style="max-width:100%;height:auto;"></a>
+  <p>Aki Sticker</p>
+  <h2>$3</h2>
+<button onclick="document.location='https://buy.stripe.com/bIY7w16Sg8g78qk6op'" 
+    class="button-56" role="button" >Buy</button><br>
+</div>
+
+<div class="product">
+<a href="products/mothbabe.htm"><img src="images/mothbabe.jpg" alt="home" style="max-width:100%;height:auto;"></a>
+  <p>Moth Babe Sticker</p>
+  <h2>$3</h2>
+<button onclick="document.location='https://buy.stripe.com/9AQg2xgsQaofcGAdQQ'" 
+    class="button-56" role="button" >Buy</button><br>
+</div>
+
+<div class="product">
+<a href="products/irilogo.htm"><img src="images/logosticker.png" alt="home" style="max-width:100%;height:auto;"></a>
+  <p>Iridescent Logo Sticker</p>
+  <h2>$2</h2>
+<button onclick="document.location='https://buy.stripe.com/7sIeYtccAfIzfSM8wy'" 
+    class="button-56" role="button" >Buy</button><br>
+</div>
+<div class="product">
+<a href="products/spicyprint.htm"><img src="images/spicyprint.png" alt="home" style="max-width:100%;height:auto;"></a>
+  <p>Spicy Print</p>
+  <h2>$5</h2>
+<button onclick="document.location='https://buy.stripe.com/cN22bHdgEgMD4a4cMP'" 
+    class="button-56" role="button" >Buy</button><br>
+</div>
+<div class="product">
+<a href="products/selfcare.htm"><img src="images/selfcare.png" alt="home" style="max-width:100%;height:auto;"></a>
+  <p>Self Care Print</p>
+  <h2>$5</h2>
+<button onclick="document.location='https://buy.stripe.com/3cs03zekI8g7cGA004'" 
+    class="button-56" role="button" >Buy</button><br>
+</div>
+    
+    <br>
+    <!-- resizable logo -->
+     <picture>
+       <source srcset="images/logosmall.png" media="(max-width: 600px)" >
+       <source srcset="images/logolarge.png" media="(max-width: 1500px)">
+       <source srcset="images/logolarge.png">
+       <img src="images/logosmall.png" alt="logo" style="max-width:100%;height:auto;">
+     </picture> 
+    
+  </div>
+
+  <div class="right">
+    <h2>About Me</h2>
+    <img src="images/hi.png" style="max-width:100%;height:auto;">
+    <p>Jesse Lee Collins<br>
+       He/They<br>
+       26<br>
+       Transmasc Autistic Artist lives in Astoria, Oregon.</p>
+  </div>
+</div>
+
+<div class="foot">
+<a href="https://www.instagram.com/jeleeart/"><img src="images/insta.png" alt="instagram" width="32" height="32"></a>
+<a href="https://twitter.com/J3L33ART"><img src="images/twitter.png" alt="Twitter" width="32" height="32"></a>
+<a href="https://www.youtube.com/@jeleeart"><img src="images/youtube.png" alt="YouTube" width="40" height="32"></a>
+<img src="images/trans.png" width="40" height="32">
+
+
+</div>
+
+</body>
+</html>
