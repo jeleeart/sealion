@@ -2,6 +2,14 @@
     box-sizing: border-box;
   }
   
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .content {
+      width: 100%;
+    }
+  }
+
   .header, .footer {
     background-color: rgb(66, 168, 175);
     color: white;
@@ -19,6 +27,7 @@
   color: white;
   text-decoration-line: none;
   text-align: center;
+  padding-left: 25px;
 }
 
 .logo {
@@ -27,6 +36,8 @@
 
   body {
     background-color: aquamarine;
+    font-family: "Open Sans", sans-serif;
+
   }
   
   .column {
@@ -85,3 +96,5 @@
     padding: 0.25em 0.75em;
   }
 }
+
+
