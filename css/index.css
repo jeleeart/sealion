@@ -57,7 +57,7 @@
 
   .container {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
   }
   
@@ -70,6 +70,8 @@
   .text {
     font-size: 20px;
     float: left;
+    margin-left: 10px;
+
   }
 
   /* photo gallery  */
@@ -127,5 +129,8 @@
   /* For mobile phones: */
   .menu, .content {
     width: 100%;
+  }
+  .container {
+    display: inline-table;
   }
 }
