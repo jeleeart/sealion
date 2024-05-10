@@ -132,12 +132,16 @@
 }
 
 @media only screen and (max-width: 620px) {
-  /* For mobile phones: */
+  /* For mobile phones:
   .menu, .content {
     width: 100%;
   }
-  .container {
-    display: inline-table;
+ */
+  .menu {
+    width: 30%;
+  }
+  .content {
+    width: 70%;
   }
 }
 
