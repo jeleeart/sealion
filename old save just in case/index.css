@@ -125,6 +125,25 @@ top: 5px;
 left: 5px;
 }
 
+@media (min-width: 768px) {
+.button-54 {
+  padding: 0.25em 0.75em;
+}
+}
+
+@media only screen and (max-width: 620px) {
+/* For mobile phones:
+.menu, .content {
+  width: 100%;
+}
+*/
+.menu {
+  width: 30%;
+}
+.content {
+  width: 70%;
+}
+}
 
 
 /* CSS */
@@ -161,52 +180,7 @@ left: 0px;
 }
 
 @media (min-width: 768px) {
-.button-54 {
-  padding: 0.25em 0.75em;
-}
-}
-
-
-@media (min-width: 768px) {
 .button-52 {
   padding: 13px 50px 13px;
 }
-}
-
-.mobilelogo {
-  display: none;
-}
-
-
-
-@media only screen and (max-width: 620px) {
-/* For mobile phones:
-.menu {
-  width: 30%;
-}
-.content {
-  width: 70%;
-}
-*/
-
-.menu, .content {
-  width: 100%;
-}
-.logo {
-  display: none;
-}
-}
-
-
-
-
-
-
-@media screen and (width <= 620px) {
-  .mobilelogo {
-    display: inline-block;
-  }
-  .textblurb {
-    text-align: center;
-  }
 }
